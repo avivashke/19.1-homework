@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ex4</h1>
+   <!-- onecompiler->
+    let numb = 25;
+   function diviRemain(numb){
+      if (numb % 2 == 0) {
+     console.log("Even");
+       }
+       else{
+          console.log("Uneven");
+         }
+         }
+         var result = diviRemain(numb)
+    -->
+    <script>
+        function checkEven(){
+          let num = prompt("Enter a number:");
+      
+          if (num % 2 == 0){
+            document.getElementById("result").innerHTML = "even";
+          } else {
+            document.getElementById("result").innerHTML = "not even";
+          }
+        }
+      </script>
+      
+      <div onclick="checkEven()"><b style="background-color: rgb(150, 227, 56);">Click Here Check if the Number is Even</b></div>
+      
+      <div id="result" style="color: rgba(186, 55, 11, 0.638);"></div>
+      
+</body>
+</html>
+  
