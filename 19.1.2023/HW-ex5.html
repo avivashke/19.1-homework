@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ex5 - vowel or consonant</h1>
+    <script>
+        function getType() {
+          let letter = document.getElementById("letter").value;
+          switch(letter) {
+            case "a":
+            case "e":
+            case "i":
+            case "o":
+            case "u":
+            case "y":
+              document.getElementById("type").innerHTML = "vowel";
+              break;
+            default:
+              document.getElementById("type").innerHTML = "consonant"
+          }
+        }
+      </script>
+      <p>Enter 1 letter</p>
+      <div>
+        <input type="text" id="letter"/>
+        <button onclick="getType()">Show Type of Letter</button>
+        <p id="type"></p>
+      </div>
+</body>
+</html>

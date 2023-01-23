@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ex6-Grades</h1>
+    <script>
+        function getGrade(){
+            let num = document.getElementById("num").value;
+
+            switch(num){
+                case(num >= 0 && num <= 20):
+                document.getElementById("grade").innerHTML = "D";
+                break;
+                case (num >= 21 && num <=55):
+                document.getElementById("grade").innerHTML = "C";
+                break;
+                case (num >= 56 && num <= 70):
+                document.getElementById("grade").innerHTML = "B";
+                break; 
+                case (num >= 71 && num <= 90):
+                document.getElementById("grade").innerHTML = "A";
+                break; 
+                case (num >= 91 && num <= 100):
+                document.getElementById("grade").innerHTML = "A+";
+                break;
+                default:
+        document.getElementById("grade").innerHTML = "Enter a number between 0 to 100"
+        }
+    }
+    </script>
+  
+    <div>
+        <input type="text" id="num">
+        <button onclick="getGrade()">Show grade</button>
+        <p id="grade"></p>
+    </div>
+</body>
+</html>
